@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+.main {
+  margin-top: 15vh;
+  padding: 20px 0;
+}
+
+/* Header */
+
+.header {
+  height: 25vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.name-logo {
+  height: 40vh;
+  position: absolute;
+  top: 10px;
+  left: 40%;
+  z-index: 3;
+}
+
+.header-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
