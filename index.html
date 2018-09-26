@@ -4,15 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <title>Elizabeth Vega</title>
   <!-- Tipografía -->
   <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
@@ -27,24 +18,142 @@
 
 <body>
   <div class="container-fluid">
-    <header className="header">
-      <img src="src/img/banner.png" alt="banner">
-      <div className="header-btn">
-        <a class="waves-effect waves-light btn">ABOUT ME</a>
-        <a class="waves-effect waves-light btn">SKILLS</a>
-        <a class="waves-effect waves-light btn">PROJECTS</a>
-        <a class="waves-effect waves-light btn">CONTACT</a>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper">
+        <img src="src/img/banner.png" alt="" class="banner">
+        <a href="#!" class="brand-logo">
+          <img src="src/img/logo.png" alt="" class="name-logo">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down nav-btns ">
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
       </div>
-      <img src="src/img/logo.png" alt="">
-    </header>
+    </nav>    
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">ABOUT ME</a></li>
+      <li><a href="#">SKILLS</a></li>
+      <li><a href="#l">PROJECTS</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
 
+    <!-- Side Buttons -->
+    <aside>
+      <div>
+        <a class="btn-floating btn-large waves-effect waves-light grey"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div>
+        <a class="btn-floating btn-large waves-effect waves-light grey"><i class="fas fa-file"></i></a>
+      </div>
+    </aside>
+
+    <div class="main">
+
+      <!-- About Me -->
+      <article class="about">
+        <h3>About Me</h3>
+        <div class="row">
+          <section class="image">
+            <img src="src/img/mini-logo.png" alt="mini-logo" class="mini-logo">
+          </section>
+          <section class="info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla. Sed pulvinar est dolor, ut placerat nibh luctus ut. Proin hendrerit lectus at erat ornare maximus. Fusce eget urna interdum, dignissim orci a, posuere lacus. Mauris id odio elementum augue porta eleifend. Sed quam erat, efficitur in ipsum at, sagittis molestie nunc. Nunc ultrices, ante consectetur hendrerit facilisis, massa est rhoncus dui, non pretium diam leo placerat nibh.
+              Phasellus laoreet elit in massa tempus, non finibus risus mollis. Maecenas nulla odio, placerat ac molestie vel, congue ac ligula. Proin gravida quam quis nisi bibendum facilisis. In at maximus mi, at porttitor nibh. Aenean in arcu efficitur purus lacinia vehicula. Vestibulum ante augue, vulputate vel erat et, cursus rhoncus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus at lorem ut consequat. Mauris id dignissim sapien, at posuere turpis. Nulla a lacus vestibulum, euismod tortor nec, vestibulum orci. Vestibulum malesuada odio purus, a convallis metus molestie sit amet. Cras volutpat tellus arcu, eget accumsan ante posuere lobortis. Duis ac tempus lacus, ac rutrum neque. Phasellus a velit hendrerit, vulputate dolor vel, iaculis elit. Suspendisse potenti. Aliquam eu cursus augue.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <!-- Skills -->
+      <article class="skills">
+        <h3>Skills</h3>
+        <section class="col-8">
+          <div class="icon-container">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-git"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-node"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-npm"></i>
+          </div>
+        </section>
+      </article>
+
+      <!-- Projects -->
+      <article class="projects col-sm-10">
+        <h3>Projects</h3>
+        <div class="row">
+        <section class="col-sm-4">
+            <figure class="snip1527">
+              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg" alt="pr-sample23" /></div>
+              <figcaption>
+                <h4>Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
+                <a class="waves-effect waves-light btn">DEMO</a>
+                <a class="waves-effect waves-light btn">CODE</a>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </section>
+          <section class="col-sm-4">
+            <figure class="snip1527">
+              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample24.jpg" alt="pr-sample24" /></div>
+              <figcaption>
+                <h4>Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
+                <a class="waves-effect waves-light btn">DEMO</a>
+                <a class="waves-effect waves-light btn">CODE</a>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </section>
+          <section class="col-sm-4">
+            <figure class="snip1527">
+              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg" alt="pr-sample25" /></div>
+              <figcaption>
+                <h4>Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
+                <a class="waves-effect waves-light btn">DEMO</a>
+                <a class="waves-effect waves-light btn">CODE</a>
+              </figcaption>
+            </figure>
+          </section>
+        </div>
+      </article>
+
+      <!-- Contact -->
+      <article>
+        <h3>Contact</h3>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Developed by Elizabeth Vega</p>
+    </footer>
   </div>
-
-
-
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="src/app.js"></script>
 </body>
 
 </html>
