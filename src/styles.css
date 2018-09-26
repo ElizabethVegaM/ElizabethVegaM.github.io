@@ -283,3 +283,6 @@ footer {
   padding-top: 2px;
 }
 
+@media (max-height: 768px) {
+
+}
