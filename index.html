@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Elizabeth Vega</title>
   <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:200,400,700" rel="stylesheet">
   <!-- Íconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -18,13 +18,17 @@
 
 <body>
   <div class="container-fluid">
+    <header class="first-screen">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <a href="#!" class="brand-logo">
+        <img src="src/img/logo.png" alt="" class="name-logo">
+      </a>
+    </header>
     <!-- Navbar -->
+    <!-- 
     <nav>
       <div class="nav-wrapper">
-        <img src="src/img/banner.png" alt="" class="banner">
-        <a href="#!" class="brand-logo">
-          <img src="src/img/logo.png" alt="" class="name-logo">
-        </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down nav-btns ">
             <li><a href="#">ABOUT ME</a></li>
@@ -40,6 +44,7 @@
       <li><a href="#l">PROJECTS</a></li>
       <li><a href="#">CONTACT</a></li>
     </ul>
+     -->
 
     <!-- Side Buttons -->
     <aside>
@@ -55,7 +60,7 @@
 
       <!-- About Me -->
       <article class="about">
-        <h3>About Me</h3>
+        <h3>Sobre Mí</h3>
         <div class="row">
           <section class="image">
             <img src="src/img/mini-logo.png" alt="mini-logo" class="mini-logo">
@@ -99,7 +104,7 @@
 
       <!-- Projects -->
       <article class="projects col-sm-10">
-        <h3>Projects</h3>
+        <h3>Proyectos</h3>
         <div class="row">
         <section class="col-sm-4">
             <figure class="snip1527">
@@ -139,21 +144,17 @@
         </div>
       </article>
 
-      <!-- Contact -->
-      <article>
-        <h3>Contact</h3>
-      </article>
-    </div>
-
     <!-- Footer -->
     <footer>
+      <h3>Contacto</h3>
       <p>Developed by Elizabeth Vega</p>
     </footer>
   </div>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="src/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="src/canvas.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ body {
 }
 
 h3 {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .main {
@@ -16,6 +16,97 @@ aside {
 	left: 10px;
 }
 
+/* Header */
+
+.first-screen {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  min-height: 100%;
+  color: #fff;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo {
+  z-index: 3;
+}
+
+/* Background Animation */
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}
 
 /* Navbar */
 nav {
@@ -69,17 +160,7 @@ nav {
   position: relative;
 }
 
-.brand-logo {
-  position: absolute;
-  position: absolute;
-  top: 5px;
-  left: 40%;
-  z-index: 3;
-}
 
-.name-logo {
-  max-height: 230px;
-}
 
 .nav-btns {
   position: absolute;
@@ -144,6 +225,7 @@ nav {
 
 .about {
   padding: 0 50px;
+  height: 100vh;
 }
 
 .mini-logo {
@@ -169,6 +251,8 @@ nav {
 
 .skills {
   text-align: center;
+  height: 100vh;
+  background: rgba(238, 236, 236, 0.486);
 }
 
 .icon-container {
@@ -178,12 +262,16 @@ nav {
 .icon-container i {
   font-size: 80px;
   padding: 20px;
-  background: -webkit-linear-gradient( #cf74ee, #273166);
+  background: -webkit-linear-gradient( #f1d337, #273166);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Projects */
+
+.projects {
+  height: 100vh;
+}
 
 .snip1527 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -269,14 +357,10 @@ nav {
   background-color: #700877;
 }
 
-
-
-/* Contact */
-
-/* Footer */
+/* Contact footer */
 
 footer {
-  height: 50px;
+  height: 100vh;
   width: 100%;
   background: black;
   color: white;
