@@ -11,13 +11,12 @@ h3 {
   font-weight: 700;
 }
 
-.main {
-  margin-top: 20px;
+p {
+  font-family: 'Niramit', sans-serif;
 }
 
-aside {
-	position: absolute;
-	left: 10px;
+.main {
+  margin-top: 20px;
 }
 
 /* Menu */
@@ -158,6 +157,7 @@ aside {
   cursor: pointer;
 }
 
+
 .close-hamburguer .line-top {
   transform: translateY(200%) rotate(45deg);
 }
@@ -182,8 +182,14 @@ aside {
 /* About Me */
 
 .about {
-  padding: 0 50px;
-  height: 100vh;
+  padding: 20px 50px 50px;
+  height: 100%;
+}
+
+.about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mini-logo {
@@ -209,8 +215,9 @@ aside {
 
 .skills {
   text-align: center;
-  height: 100vh;
-  background: rgba(238, 236, 236, 0.486);
+  height: 100%;
+  background: rgba(211, 209, 209, 0.486);
+  padding: 50px;
 }
 
 .icon-container {
@@ -218,9 +225,11 @@ aside {
 }
 
 .icon-container i {
-  font-size: 80px;
+  font-size: 100px;
   padding: 20px;
-  background: -webkit-linear-gradient( #f1d337, #273166);
+  background: -moz-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
+  background: -webkit-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
+  background: linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #c22192 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -228,16 +237,31 @@ aside {
 /* Projects */
 
 .projects {
-  height: 100vh;
+  padding: 50px;
+}
+
+.projects .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0!important;
+}
+
+.col {
+  padding: 0!important;
+}
+
+.projects .image {
+  width: 100%;
 }
 
 .snip1527 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   float: left;
-  font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
-  max-width: 310px;
+  max-width: 300px;
   min-width: 250px;
   overflow: hidden;
   position: relative;
@@ -318,13 +342,61 @@ aside {
 /* Contact footer */
 
 footer {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: black;
   color: white;
-  padding-top: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-@media (max-height: 768px) {
+footer a {
+  margin: 5px;
+}
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .name-logo {
+    width: 100%;
+  }
+  .about {
+    padding: 0;
+    padding-top: 5px;
+  }
+  .about .row {
+    display: initial;
+  }
+  .image {
+    width: 100%;
+  } 
+  .mini-logo {
+    height: 150px;
+  }
+  .info {
+    width: 80%;
+  }
+  .icon-container i {
+    font-size: 50px;
+  }
+  .skills {
+    padding: 50px;
+  }
+  .projects {
+    padding: 0;
+  }
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .snip1527 {
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
