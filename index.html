@@ -13,31 +13,53 @@
     crossorigin="anonymous">
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="src/css/styles.css">
   <link rel="stylesheet" href="src/css/banner.css">
+  <link rel="stylesheet" href="src/css/navbar.css">
 </head>
 
 <body>
-  <!-- <div class="hamburguer">
-    <div class="lines line-top"></div>
-    <div class="lines line-mid"></div>
-    <div class="lines line-bottom"></div>
-  </div>  -->
   <div class="container-fluid">
     <!-- Banner -->
     <div class="banner">
       <div class="banner__overlay"> 
-                    <!-- Menu -->
-                    <div class="full-menu">
-                        <nav id="menu" class="menu nav-btns">
-                          <ul>
-                            <li><a class="aboutLink" href="#">ABOUT</a></li>
-                            <li><a class="skillsLink" href="#">SKILLS</a></li>
-                            <li><a class="projectsLink" href="#">PROYECTOS</a></li>
-                            <li><a class="contactLink" href="#">CONTACTO</a></li>
-                          </ul>
-                        </nav>
-                      </div>
+        <!-- Menu -->
+          <!-- Navbar -->
+  <div class="nav-wrap nav-btns">
+      <div class="logo">
+        <img src="src/img/mini-logo.png" class="nav-logo" alt="">
+      </div>
+      <div class="toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <ul class="nav-bar">
+        <li><a class="aboutLink" href="#">ABOUT</a></li>
+        <li><a class="skillsLink" href="#">SKILLS</a></li>
+        <li><a class="projectsLink" href="#">PROYECTOS</a></li>
+        <li><a class="contactLink" href="#">CONTACTO</a></li>
+      </ul>
+    </div>
+        <!-- <nav>
+          <div class="nav-wrapper full-menu nav-btns">
+            <img src="src/img/mini-logo.png" class="nav-logo" alt="">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="aboutLink" href="#">ABOUT</a></li>
+              <li><a class="skillsLink" href="#">SKILLS</a></li>
+              <li><a class="projectsLink" href="#">PROYECTOS</a></li>
+              <li><a class="contactLink" href="#">CONTACTO</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav nav-mobile-btns" id="mobile-demo">
+          <li><a class="aboutLink" href="#">ABOUT</a></li>
+          <li><a class="skillsLink" href="#">SKILLS</a></li>
+          <li><a class="projectsLink" href="#">PROYECTOS</a></li>
+          <li><a class="contactLink" href="#">CONTACTO</a></li>
+        </ul> -->
         <div class="banner__container"> 
           <a href="#!" class="brand-logo">
             <img src="src/img/logo.png" alt="" class="name-logo">
@@ -49,11 +71,11 @@
 
     <div class="main">
       <!-- About Me -->
-      <article class="about">
+      <article class="about fadeInUp" data-aos="fade-right">
         <h3>ABOUT</h3>
         <div class="row">
           <section class="image">
-            <img src="src/img/mini-logo.png" alt="mini-logo" class="mini-logo">
+            <img src="src/img/profile.jpg" alt="mini-logo" class="mini-logo">
           </section>
           <section class="info">
             <p>
@@ -66,7 +88,7 @@
       </article>
 
       <!-- Skills -->
-      <article class="skills">
+      <article class="skills" data-aos="fade-left">
         <h3>TOOLS</h3>
         <section class="col-8">
           <div class="icon-container">
@@ -94,9 +116,10 @@
       </article>
 
       <!-- Projects -->
-      <article class="projects">
+      <article class="projects" data-aos="fade-right">
         <h3>PROYECTOS</h3>
         <div class="row">
+          <!-- FoodMap -->
           <div class="col">
             <section>
               <figure class="snip1527">
@@ -111,6 +134,7 @@
               </figure>
             </section>
           </div>
+          <!-- IF Visitors -->
           <div class="col">
             <section>
               <figure class="snip1527">
@@ -125,18 +149,19 @@
               </figure>
             </section>
           </div>
+          <!-- ConectApp -->
           <div class="col">
             <section>
-                <figure class="snip1527">
-                  <div class="image"><img src="src/img/conectapp.jpeg" alt="pr-sample25" /></div>
-                  <figcaption>
-                    <h4>ConectApp Alumnos</h4>
-                    <p>Red social enfocada en la comunidad escolar, con el propósito de mejorar la comunicación entre almunos y sus profesores.</p>
-                    <a href="https://social-network-d7373.firebaseapp.com/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                    <a href="https://github.com/ElizabethVegaM/scl-2018-05-bc-core-am-socialnetwork" target="_blank" class="btn">CODE</a>
-                  </figcaption>
-                </figure>
-              </section>
+              <figure class="snip1527">
+                <div class="image"><img src="src/img/conectapp.jpeg" alt="pr-sample25" /></div>
+                <figcaption>
+                  <h4>ConectApp Alumnos</h4>
+                  <p>Red social enfocada en la comunidad escolar, con el propósito de mejorar la comunicación entre almunos y sus profesores.</p>
+                  <a href="https://social-network-d7373.firebaseapp.com/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
+                  <a href="https://github.com/ElizabethVegaM/scl-2018-05-bc-core-am-socialnetwork" target="_blank" class="btn">CODE</a>
+                </figcaption>
+              </figure>
+            </section>
           </div>
         </div>
       </article>
@@ -157,7 +182,9 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="src/app.js"></script>
 </body>
 
