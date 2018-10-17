@@ -20,7 +20,12 @@ p {
 }
 
 .main {
-  margin-top: 20px;
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,247,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(255,247,255,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,247,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,247,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,247,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,247,255,1) 100%);
 }
 
 /* Sections */
@@ -33,13 +38,15 @@ p {
 /* About Me */
 
 #aboutSection {
-  padding-top: 13vh;
+  padding-top: 15vh;
+  margin: 0;
 }
 
 .mini-logo {
   height: 250px;
   border-radius: 10px;
-  border: 5px solid #dbdbdb;
+  border: 5px solid rgba(194,33,146,1);
+  
 }
 
 .snip1581 {
@@ -118,14 +125,12 @@ p {
   color: #ffffff;
   float: left;
   font-size: 16px;
-  max-width: 300px;
-  min-width: 250px;
   overflow: hidden;
   position: relative;
   text-align: left;
   width: 100%;
   border-radius: 10px;
-
+  margin: 0;
 }
 
 .snip1527 * {
@@ -159,7 +164,7 @@ p {
   content: '';
   background: -moz-linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #ff2759 100%);
   background: -webkit-linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #ff2759 100%);
-  background: linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #c22192 100%);
+  background: linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #ff2759 100%);
   opacity: 0.8;
   z-index: -1;
 }
@@ -261,3 +266,5 @@ p {
     margin-bottom: 20px;
   }
 }
+
+
