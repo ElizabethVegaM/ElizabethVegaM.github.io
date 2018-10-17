@@ -20,46 +20,30 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <!-- Navbar -->
+  <div class="nav-wrap nav-btns">
+    <div class="logo">
+      <a href="#top">
+        <img src="src/img/mini-logo.png" class="nav-logo" alt="">
+      </a>
+    </div>
+    <div class="toggle">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <ul class="nav-bar">
+      <li><a class="aboutLink" href="#aboutSection">ABOUT</a></li>
+      <li><a class="skillsLink" href="#skillsSection">SKILLS</a></li>
+      <li><a class="projectsLink" href="#ProjectsSection">PROYECTOS</a></li>
+      <li><a class="contactLink" href="#contactSection">CONTACTO</a></li>
+    </ul>
+  </div>
+  <div id="top" class="container-fluid">
     <!-- Banner -->
     <div class="banner">
+      <canvas id="space"></canvas>
       <div class="banner__overlay"> 
-        <!-- Menu -->
-          <!-- Navbar -->
-  <div class="nav-wrap nav-btns">
-      <div class="logo">
-        <img src="src/img/mini-logo.png" class="nav-logo" alt="">
-      </div>
-      <div class="toggle">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-      <ul class="nav-bar">
-        <li><a class="aboutLink" href="#">ABOUT</a></li>
-        <li><a class="skillsLink" href="#">SKILLS</a></li>
-        <li><a class="projectsLink" href="#">PROYECTOS</a></li>
-        <li><a class="contactLink" href="#">CONTACTO</a></li>
-      </ul>
-    </div>
-        <!-- <nav>
-          <div class="nav-wrapper full-menu nav-btns">
-            <img src="src/img/mini-logo.png" class="nav-logo" alt="">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="aboutLink" href="#">ABOUT</a></li>
-              <li><a class="skillsLink" href="#">SKILLS</a></li>
-              <li><a class="projectsLink" href="#">PROYECTOS</a></li>
-              <li><a class="contactLink" href="#">CONTACTO</a></li>
-            </ul>
-          </div>
-        </nav>
-        <ul class="sidenav nav-mobile-btns" id="mobile-demo">
-          <li><a class="aboutLink" href="#">ABOUT</a></li>
-          <li><a class="skillsLink" href="#">SKILLS</a></li>
-          <li><a class="projectsLink" href="#">PROYECTOS</a></li>
-          <li><a class="contactLink" href="#">CONTACTO</a></li>
-        </ul> -->
         <div class="banner__container"> 
           <a href="#!" class="brand-logo">
             <img src="src/img/logo.png" alt="" class="name-logo">
@@ -71,7 +55,7 @@
 
     <div class="main">
       <!-- About Me -->
-      <article class="about fadeInUp" data-aos="fade-right">
+      <article id="aboutSection" class="about fadeInUp" data-aos="fade-right">
         <h3>ABOUT</h3>
         <div class="row">
           <section class="image">
@@ -88,7 +72,7 @@
       </article>
 
       <!-- Skills -->
-      <article class="skills" data-aos="fade-left">
+      <article id="skillsSection" class="skills" data-aos="fade-left">
         <h3>TOOLS</h3>
         <section class="col-8">
           <div class="icon-container">
@@ -116,7 +100,7 @@
       </article>
 
       <!-- Projects -->
-      <article class="projects" data-aos="fade-right">
+      <article id="ProjectsSection" class="projects" data-aos="fade-right">
         <h3>PROYECTOS</h3>
         <div class="row">
           <!-- FoodMap -->
@@ -167,7 +151,7 @@
       </article>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contactSection">
       <h3>CONTACTO</h3>
       <!-- Side Buttons -->
       <h6>Envíame un correo a <span>eb.vega.m@gmail.com</span> o un mensaje a través de mis redes de contacto. También dejo mi CV a tu disposición.</h6>
@@ -186,6 +170,7 @@
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="src/app.js"></script>
+  <script src="src/background.js"></script>
 </body>
 
 </html>

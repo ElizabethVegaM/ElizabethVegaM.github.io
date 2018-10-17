@@ -20,46 +20,14 @@ p {
 }
 
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
+/* Sections */
 
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+article {
+  min-height: 100vh;
+  padding-top: 13vh;
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
 
 /* About Me */
-
-.about {
-  padding: 20px 50px 50px;
-  height: 100vh;
-}
 
 .about .row {
   display: flex;
@@ -92,9 +60,6 @@ p {
 
 .skills {
   text-align: center;
-  height: 100%;
-  background: rgba(211, 209, 209, 0.486);
-  padding: 50px;
 }
 
 .icon-container {
@@ -112,10 +77,6 @@ p {
 }
 
 /* Projects */
-
-.projects {
-  padding: 50px;
-}
 
 .projects .row {
   display: -ms-flexbox;
@@ -181,7 +142,7 @@ p {
   background: -moz-linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #ff2759 100%);
   background: -webkit-linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #ff2759 100%);
   background: linear-gradient(90deg, #2c128b 30%, #9c21c2 100%, #c22192 100%);
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: -1;
 }
 

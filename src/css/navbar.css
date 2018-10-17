@@ -1,14 +1,16 @@
 .nav-wrap {
   position: fixed;
-  display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 100%;
+  width: 100vw;
   min-height: 10vh;
   z-index: 3;
-  background: -moz-linear-gradient(90deg, #0b0522ad 30%, #290933ad 100%, #350913ad 100%);
-  background: -webkit-linear-gradient(90deg, #0b0522ad 30%, #290933ad 100%, #350913ad 100%);
-  background: linear-gradient(90deg, #0b0522ad 30%, #290933ad 100%, #350913ad 100%);
+  background: -moz-linear-gradient(90deg, #0b0522 30%, #290933 100%, #72142a 100%);
+  background: -webkit-linear-gradient(90deg, #0b0522 30%, #290933 100%, #72142a 100%);
+  background: linear-grient(90deg, #0b0522 30%, #420f52 100%, #72142a 100%);
+  -webkit-box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
 }
 
 .nav-logo {
