@@ -84,8 +84,6 @@ p {
 .skills {
   text-align: center;
   padding-top: 14vh;
-  padding-left: 20px;
-  padding-right: 50px;
 }
 
 .skills .row {
@@ -202,7 +200,7 @@ p {
 /* Contact footer */
 
 #contactSection {
-  padding: 16vh 20px 0px 20px;
+  padding: 16vh 20px 20px 20px;
   height: 100%;
   width: 100%;
   background: black;
@@ -248,29 +246,12 @@ p {
     padding-top: 5px;
   }
 
-  .mini-logo {
-    height: 150px;
-  }
-
   .info {
     width: 100%;
     font-size: 18px;
     padding: 20px;
   }
-
-  .icon-container i {
-    font-size: 50px;
-  }
-
-  .skills {
-    padding: 50px;
-  }
-
-  .projects {
-    padding: 0;
-  }
-
-  .snip1527 {
+  .icon-container {
     max-width: 25%;
   }
 }
