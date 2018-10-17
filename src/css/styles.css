@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-family: 'Advent Pro', sans-serif;
@@ -19,20 +23,17 @@ p {
   margin-top: 20px;
 }
 
-
 /* Sections */
 
-article {
+#top section {
   min-height: 100vh;
-  padding-top: 13vh;
+  margin-top: 15vh;
 }
 
 /* About Me */
 
-.about .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#aboutSection {
+  padding-top: 13vh;
 }
 
 .mini-logo {
@@ -41,16 +42,38 @@ article {
   border: 5px solid #dbdbdb;
 }
 
-.about section {
+.snip1581 {
+  position: relative;
   display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-.image {
-  width: 40%;
+.snip1581 * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1581 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1581:hover img,
+.snip1581.hover img {
+  -webkit-transform: scale(1.3) rotate(5deg);
+  transform: scale(1.3) rotate(5deg);
 }
 
 .info {
-  width: 55%;
   text-align: justify;
   margin-right: 50px;
   font-size: 25px;
@@ -60,36 +83,32 @@ article {
 
 .skills {
   text-align: center;
+  padding-top: 14vh;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.skills .row {
+  display: flex;
 }
 
 .icon-container {
   display: inline-block;
 }
 
-.icon-container i {
-  font-size: 100px;
-  padding: 20px;
-  background: -moz-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
-  background: -webkit-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
-  background: linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #c22192 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.icon-container img {
+  width: 100%;
+}
+
+.icon-container p {
+  font-size: 17px;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 /* Projects */
 
-.projects .row {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 !important;
-}
-
-.col {
-  padding: 0 !important;
+.projects {
+  padding-top: 15vh;
 }
 
 .projects .image {
@@ -182,20 +201,41 @@ article {
 
 /* Contact footer */
 
-footer {
+#contactSection {
+  padding: 16vh 20px 0px 20px;
   height: 100%;
   width: 100%;
   background: black;
   color: white;
+}
+
+.contact-info {
   padding: 20px;
 }
 
-footer span {
+.contact-info span {
   font-weight: 700;
 }
 
-footer a {
-  margin: 5px;
+.sn-links {
+  padding-top: 20px;
+}
+
+.sn-links a {
+  font-size: 20px;
+}
+
+.round-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  background: -moz-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
+  background: -webkit-linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #ff2759 100%);
+  background: linear-gradient(320deg, #2c128b 30%, #9c21c2 60%, #c22192 100%);
+  color: #ffffff;
+  font-size: 30px;
+  padding: 3px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -206,14 +246,6 @@ footer a {
   .about {
     padding: 0;
     padding-top: 5px;
-  }
-
-  .about .row {
-    display: initial;
-  }
-
-  .image {
-    width: 100%;
   }
 
   .mini-logo {
@@ -238,21 +270,7 @@ footer a {
     padding: 0;
   }
 
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-
   .snip1527 {
     max-width: 25%;
-  }
-}
-
-@media (min-width: 450px) and (max-width: 800px) {
-  .col {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
   }
 }

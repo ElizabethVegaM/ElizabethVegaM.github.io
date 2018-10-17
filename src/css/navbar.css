@@ -73,7 +73,8 @@
   align-items: center;
   letter-spacing: 1.5px;
   line-height: 1em;
-  z-index: 2;
+  z-index: 6;
+  display: flex;
 }
 
 .nav-btns ul {
