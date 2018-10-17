@@ -125,6 +125,7 @@ p {
   text-align: left;
   width: 100%;
   border-radius: 10px;
+  margin: 0;
 }
 
 .snip1527 * {
@@ -240,6 +241,9 @@ p {
   .name-logo {
     width: 100%;
   }
+  #top section {
+    margin-top: 12vh;
+  }
 
   .about {
     padding: 0;
@@ -247,11 +251,13 @@ p {
   }
 
   .info {
-    width: 100%;
     font-size: 18px;
-    padding: 20px;
+    padding: 20px!important;
   }
   .icon-container {
     max-width: 25%;
+  }
+  .snip1527 {
+    margin-bottom: 20px;
   }
 }
