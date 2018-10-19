@@ -4,156 +4,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Elizabeth Vega</title>
   <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:200,400,700|Niramit" rel="stylesheet">
   <!-- Íconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="src/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="src/css/banner.css">
+  <link rel="stylesheet" href="src/css/navbar.css">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- Navbar -->
-    <nav>
-      <div class="nav-wrapper">
-        <img src="src/img/banner.png" alt="" class="banner">
-        <a href="#!" class="brand-logo">
-          <img src="src/img/logo.png" alt="" class="name-logo">
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down nav-btns ">
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-      </div>
-    </nav>    
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">ABOUT ME</a></li>
-      <li><a href="#">SKILLS</a></li>
-      <li><a href="#l">PROJECTS</a></li>
-      <li><a href="#">CONTACT</a></li>
+  <!-- Navbar -->
+  <div class="nav-wrap nav-btns">
+    <div class="logo">
+      <a href="#top">
+        <img src="src/img/mini-logo.png" class="nav-logo" alt="">
+      </a>
+    </div>
+    <div class="toggle">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <ul class="nav-bar">
+      <li><a class="aboutLink menu" href="#aboutSection">ABOUT</a></li>
+      <li><a class="skillsLink menu" href="#skillsSection">TOOLS</a></li>
+      <li><a class="projectsLink menu" href="#projectsSection">PROYECTOS</a></li>
+      <li><a class="contactLink menu" href="#contactSection">CONTACTO</a></li>
     </ul>
-
-    <!-- Side Buttons -->
-    <aside>
-      <div>
-        <a class="btn-floating btn-large waves-effect waves-light grey"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div>
-        <a class="btn-floating btn-large waves-effect waves-light grey"><i class="fas fa-file"></i></a>
-      </div>
-    </aside>
-
-    <div class="main">
-
-      <!-- About Me -->
-      <article class="about">
-        <h3>About Me</h3>
-        <div class="row col-sm-12">
-          <section class="image col-sm-4">
-            <img src="src/img/mini-logo.png" alt="mini-logo" class="mini-logo">
-          </section>
-          <section class="info col-sm-7">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla. Sed pulvinar est dolor, ut placerat nibh luctus ut. Proin hendrerit lectus at erat ornare maximus. Fusce eget urna interdum, dignissim orci a, posuere lacus. Mauris id odio elementum augue porta eleifend. Sed quam erat, efficitur in ipsum at, sagittis molestie nunc. Nunc ultrices, ante consectetur hendrerit facilisis, massa est rhoncus dui, non pretium diam leo placerat nibh.
-              Phasellus laoreet elit in massa tempus, non finibus risus mollis. Maecenas nulla odio, placerat ac molestie vel, congue ac ligula. Proin gravida quam quis nisi bibendum facilisis. In at maximus mi, at porttitor nibh. Aenean in arcu efficitur purus lacinia vehicula. Vestibulum ante augue, vulputate vel erat et, cursus rhoncus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus at lorem ut consequat. Mauris id dignissim sapien, at posuere turpis. Nulla a lacus vestibulum, euismod tortor nec, vestibulum orci. Vestibulum malesuada odio purus, a convallis metus molestie sit amet. Cras volutpat tellus arcu, eget accumsan ante posuere lobortis. Duis ac tempus lacus, ac rutrum neque. Phasellus a velit hendrerit, vulputate dolor vel, iaculis elit. Suspendisse potenti. Aliquam eu cursus augue.
-            </p>
-          </section>
+  </div>
+  <main id="top">
+    <!-- Banner -->
+    <div class="banner">
+      <canvas id="space"></canvas>
+      <div class="banner__overlay">
+        <div class="banner__container">
+          <a href="#!" class="brand-logo">
+            <img src="src/img/logo.png" alt="" class="name-logo">
+          </a>
         </div>
-      </article>
-
-      <!-- Skills -->
-      <article class="skills">
-        <h3>Skills</h3>
-        <section class="col-8">
-          <div class="icon-container">
-            <i class="fab fa-html5"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-js-square"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-react"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-git"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-node"></i>
-          </div>
-          <div class="icon-container">
-            <i class="fab fa-npm"></i>
-          </div>
-        </section>
-      </article>
-
-      <!-- Projects -->
-      <article class="projects col-sm-10">
-        <h3>Projects</h3>
-        <div class="row">
-        <section class="col-sm-4">
-            <figure class="snip1527">
-              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg" alt="pr-sample23" /></div>
-              <figcaption>
-                <h4>Project</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
-                <a class="waves-effect waves-light btn">DEMO</a>
-                <a class="waves-effect waves-light btn">CODE</a>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </section>
-          <section class="col-sm-4">
-            <figure class="snip1527">
-              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample24.jpg" alt="pr-sample24" /></div>
-              <figcaption>
-                <h4>Project</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
-                <a class="waves-effect waves-light btn">DEMO</a>
-                <a class="waves-effect waves-light btn">CODE</a>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </section>
-          <section class="col-sm-4">
-            <figure class="snip1527">
-              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample25.jpg" alt="pr-sample25" /></div>
-              <figcaption>
-                <h4>Project</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis commodo nulla.</p>
-                <a class="waves-effect waves-light btn">DEMO</a>
-                <a class="waves-effect waves-light btn">CODE</a>
-              </figcaption>
-            </figure>
-          </section>
-        </div>
-      </article>
-
-      <!-- Contact -->
-      <article>
-        <h3>Contact</h3>
-      </article>
+        <img class="banner__scroll-down" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>Developed by Elizabeth Vega</p>
-    </footer>
-  </div>
+    <div class="main">
+      <!-- About Me -->
+      <div id="aboutSection" class="topper"></div>
+      <section class="about" data-aos="fade-up">
+        <h3 >ABOUT</h>
+        <div class="row">
+          <div class="image col s12 m5" data-aos="fade-right">
+            <figure class="snip1581 mini-logo">
+              <img src="src/img/profile.jpg" alt="profile-picture"/>
+            </figure>
+          </div>
+          <div class="info col s12 m6" data-aos="fade-left">
+            <p>
+              Front-End Developer enfocada en el desarrollo de páginas y aplicaciones web de calidad, dinámicas y con
+              un alto enfoque en el usuario final. Busco combinar las mejores herramientas digitales de acuerdo a los
+              requerimientos del cliente.
+              <br>
+              Soy una persona curiosa en constante búsqueda de nuevos conocimientos, fascinada por el alcance de la
+              tecnología actual y cómo aporta a la vida de las personas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools -->
+      <div id="skillsSection" class="topper"></div>
+      <section  class="skills" data-aos="fade-up">
+        <h3>TOOLS</h3>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/HTML.png" alt="">
+            <p>HTML 5</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/CSS.png" alt="">
+            <p>CSS 3</p>
+          </div>
+          <div class="icon-container col offset-s3 m2" data-aos="fade-up">
+            <img src="src/img/JavaScript.png" alt="">
+            <p>JavaScript</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/Bootstrap.png" alt="">
+            <p>Bootstrap</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/materialize.png" alt="">
+            <p>Materialize</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/Node-JS.png" alt="">
+            <p>NodeJS</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/Npm.png" alt="">
+            <p>NPM</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/React.png" alt="">
+            <p>ReactJS</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/firebase.png" alt="">
+            <p>Firebase</p>
+          </div>
+          <div class="icon-container col s3 m2" data-aos="fade-up">
+            <img src="src/img/GitHub-Icon.png" alt="">
+            <p>Github</p>
+          </div>
+      </section>
+
+      <!-- Projects -->
+      <div id="projectsSection" class="topper"></div>
+      <section  class="projects container" data-aos="fade-up">
+        <h3>PROYECTOS</h3>
+        <div class="row">
+          <!-- FoodMap -->
+          <div class="col s12 m6 l4" data-aos="fade-up">
+            <figure class="snip1527">
+              <div class="image"><img src="src/img/foodmap.jpeg" alt="foodmap caption" /></div>
+              <figcaption>
+                <h4>FOOD MAP</h4>
+                <p>Web-app que utiliza Google Maps para buscar lugares de comida con geolocalización y preferencias
+                  personales.</p>
+                <a href="https://elizabethvegam.github.io/scl-2018-01-foodmap/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
+                <a href="https://github.com/ElizabethVegaM/scl-2018-01-foodmap" target="_blank" class="waves-effect waves-light btn">CODE</a>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <!-- IF Visitors -->
+          <div class="col s12 m6 l4" data-aos="fade-up">
+            <figure class="snip1527">
+              <div class="image"><img src="src/img/ifvisitors.jpeg" alt="pr-sample24" /></div>
+              <figcaption>
+                <h4>IF Visitors</h4>
+                <p>Aplicación que registra visitantes del edificio IF Blanco para mejorar la seguridad en el acceso al recinto.</p>
+                <a href="https://registro-visitantes.firebaseapp.com/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
+                <a href="https://github.com/ElizabethVegaM/scl-2018-01-ProyectoFinalCore" target="_blank" class="waves-effect waves-light btn">CODE</a>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <!-- ConectApp -->
+          <div class="col s12 m6 l4" data-aos="fade-up">
+            <figure class="snip1527">
+              <div class="image"><img src="src/img/conectapp.jpeg" alt="pr-sample25" /></div>
+              <figcaption>
+                <h4>ConectApp</h4>
+                <p>Red social enfocada en la comunidad escolar que mejora la comunicación entre alumnos y sus profesores.</p>
+                <a href="https://social-network-d7373.firebaseapp.com/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
+                <a href="https://github.com/ElizabethVegaM/scl-2018-05-bc-core-am-socialnetwork" target="_blank" class="btn">CODE</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="contactSection" class="foot" data-aos="fade-up">
+        <h3>CONTACTO</h3>
+        <!-- Side Buttons -->
+        <div class="contact-info">
+          <h5>Si estás interesado en mi trabajo o deseas conocer un poco más, te invito a contactarme a través de los siguientes medios:</h5>
+        </div>
+        <div class="sn-container col s6 offset-s3">
+          <div class="sn-links">
+            <div class="round-btn">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <a>eb.vega.m@gmail.com</a>
+          </div>
+          <div class="sn-links">
+            <div class="round-btn">
+              <i class="fab fa-github-alt"></i>
+            </div>
+            <a href="https://github.com/ElizabethVegaM" target="_blank">ElizabethVegaM</a>
+          </div>
+          <div class="sn-links">
+            <div class="round-btn">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/elizabeth-vega-medina/" target="_blank">elizabeth-vega-medina</a>
+          </div>
+          <div class="sn-links">
+            <div class="round-btn">
+              <i class="fas fa-file"></i>
+            </div>
+            <a href="src/Elizabeth Vega CV.pdf" target="_blank" download >CV Online</a>
+          </div>
+        </div>
+      </section>
+  </main>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="src/app.js"></script>
+  <!-- <script src="src/background.js"></script> -->
+
 </body>
 
 </html>
