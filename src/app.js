@@ -8,6 +8,10 @@ $(".dropdown").click(function() {
   $(".sub-nav").slideToggle();
   $(this).toggleClass("active");
 });
+$(".menu").click(function() {
+	$(".toggle").removeClass("is-active");
+	$(".nav-bar").slideToggle();
+});
 
 /* Stars animation */
 

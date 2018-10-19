@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,13 +33,15 @@ p {
 
 #top section {
   min-height: 100vh;
-  margin-top: 15vh;
+}
+
+.topper {
+  height: 15vh;
 }
 
 /* About Me */
 
 #aboutSection {
-  padding-top: 15vh;
   margin: 0!important;
 }
 
@@ -88,7 +91,6 @@ p {
 
 .skills {
   text-align: center;
-  padding-top: 14vh;
 }
 
 .skills .row {
@@ -110,8 +112,8 @@ p {
 
 /* Projects */
 
-.projects {
-  padding-top: 15vh;
+.projects .row {
+  padding-top: 20px;
 }
 
 .projects .image {
@@ -207,7 +209,7 @@ p {
 
 /* Contact footer */
 
-#contactSection {
+.foot {
   padding: 16vh 20px 20px 20px;
   height: 100%;
   width: 100%;
@@ -245,18 +247,16 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .topper {
+    height: 10vh;
+  }
   .name-logo {
     width: 100%;
   }
-  #top section {
-    margin-top: 12vh;
-  }
-
   .about {
     padding: 0;
     padding-top: 5px;
   }
-
   .info {
     font-size: 18px;
     padding: 20px!important;
@@ -266,6 +266,18 @@ p {
   }
   .snip1527 {
     margin-bottom: 20px;
+  }
+  .foot {
+    padding-top: 10vh;
+  }
+  .foot h5 {
+    font-size: 18px;
+  }
+  .contact-info {
+    padding: 0;
+  }
+  .sn-links a {
+    font-size: 18px;
   }
 }
 
