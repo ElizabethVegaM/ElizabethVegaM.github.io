@@ -42,7 +42,6 @@ p {
 /* About Me */
 
 #aboutSection {
-  padding-top: 15vh;
   margin: 0!important;
 }
 
@@ -247,10 +246,6 @@ p {
   .name-logo {
     width: 100%;
   }
-  #top section {
-    margin-top: 12vh;
-  }
-
   .about {
     padding: 0;
     padding-top: 5px;

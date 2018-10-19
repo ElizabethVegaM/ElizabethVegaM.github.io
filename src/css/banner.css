@@ -28,7 +28,6 @@
 .banner__container {
   display: table-cell;
   vertical-align: middle;
-  height: 100vh;
 }
 
 .banner__scroll-down {
