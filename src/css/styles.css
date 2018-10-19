@@ -243,6 +243,9 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .topper {
+    height: 10vh;
+  }
   .name-logo {
     width: 100%;
   }
@@ -250,7 +253,6 @@ p {
     padding: 0;
     padding-top: 5px;
   }
-
   .info {
     font-size: 18px;
     padding: 20px!important;
@@ -260,6 +262,18 @@ p {
   }
   .snip1527 {
     margin-bottom: 20px;
+  }
+  .foot {
+    padding-top: 10vh;
+  }
+  .foot h5 {
+    font-size: 18px;
+  }
+  .contact-info {
+    padding: 0;
+  }
+  .sn-links a {
+    font-size: 18px;
   }
 }
 
