@@ -1,3 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-wrap {
   position: fixed;
   justify-content: center;
@@ -75,18 +104,16 @@
   display: flex;
 }
 
-.nav-btns ul {
+.nav-bar ul {
   list-style: none;
 }
 
-.nav-btns li {
-  list-style: outside none none;
+.nav-bar li {
   margin: 0.5em 0.6em;
-  padding: 18px 15px;
+  padding: 8px 15px;
   position: relative;
   transition: all 300ms ease-in;
   cursor: pointer;
-  font-size: 20px;
 }
 
 
@@ -94,8 +121,8 @@
   color: #fff!important;
 }
 
-.nav-btns li:before,
-.nav-btns li:after {
+.nav-bar li:before,
+.nav-bar :after {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   height: 2px;
@@ -106,30 +133,30 @@
   opacity: 0;
 }
 
-.nav-btns li:before {
+.nav-bar li:before {
   top: 0;
   left: 0;
 }
 
-.nav-btns li:after {
+.nav-bar li:after {
   bottom: 0;
   right: 0;
 }
 
-.nav-btns li:hover:before,
-.nav-btns li.hover:before,
-.nav-btns li:hover:after,
-.nav-btns li.hover:after {
+.nav-bar li:hover:before,
+.nav-bar li.hover:before,
+.nav-bar li:hover:after,
+.nav-bar li.hover:after {
   opacity: 1;
 }
 
-.nav-btns li:hover:before,
-.nav-btns li.hover:before {
+.nav-bar li:hover:before,
+.nav-bar li.hover:before {
   left: 65%;
 }
 
-.nav-btns li:hover:after,
-.nav-btns li.hover:after {
+.nav-bar li:hover:after,
+.nav-bar li.hover:after {
   right: 65%;
 }
 

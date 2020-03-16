@@ -1,123 +1,66 @@
-AOS.init();
+/*----------------------------------------------------*/
+/* Quote Loop
+------------------------------------------------------ */
 
-$(".toggle").click(function() {
-  $(".nav-bar").slideToggle();
-$(this).toggleClass("is-active");
-});
-$(".dropdown").click(function() {
-  $(".sub-nav").slideToggle();
-  $(this).toggleClass("active");
-});
-$(".menu").click(function() {
-	$(".toggle").removeClass("is-active");
-	$(".nav-bar").slideToggle();
-});
+function fade($ele) {
+	$ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
+			var $next = $(this).next('.quote');
+			fade($next.length > 0 ? $next : $(this).parent().children().first());
+ });
+}
+fade($('.quoteLoop > .quote').first());
 
-/* Stars animation */
 
-var canvas;
-var context;
-var screenH;
-var screenW;
-var stars = [];
-var fps = 60;
-var numStars = 500;
+/*----------------------------------------------------*/
+/* Navigation
+------------------------------------------------------ */
 
-$('document').ready(function() {
-  
-  // Calculate the screen size
-	screenH = $(window).height();
-	screenW = $(window).width();
-	
-	// Get the canvas
-	canvas = $('#space');
-	
-	// Fill out the canvas
-	canvas.attr('height', screenH);
-	canvas.attr('width', screenW);
-	context = canvas[0].getContext('2d');
-	
-	// Create all the stars
-	for(var i = 0; i < numStars; i++) {
-		var x = Math.round(Math.random() * screenW);
-		var y = Math.round(Math.random() * screenH);
-		var length = 1 + Math.random() * 1.5;
-		var opacity = Math.random();
-		
-		// Create a new star and draw
-		var star = new Star(x, y, length, opacity);
-		
-		// Add the the stars array
-		stars.push(star);
+$(window).scroll(function() {
+
+	if ($(window).scrollTop() > 300) {
+			$('.main_nav').addClass('sticky');
+	} else {
+			$('.main_nav').removeClass('sticky');
 	}
-	
-	animateInterval = setInterval(animate, 1000 / fps);
 });
 
-/**
- * Animate the canvas
- */
-function animate() {
-	context.clearRect(0, 0, screenW, screenH);
-	$.each(stars, function() {
-		this.draw(context);
-	})
-}
-
-/* stop Animation */
-function stopAnimation()
-{
-     clearInterval(animateInterval);
-}
-
-//stopAnimation();
-
-function Star(x, y, length, opacity) {
-	this.x = parseInt(x);
-	this.y = parseInt(y);
-	this.length = parseInt(length);
-	this.opacity = opacity;
-	this.factor = 1;
-	this.increment = Math.random() * .03;
-}
-
-Star.prototype.draw = function() {
-	context.rotate((Math.PI * 1 / 10));
-	
-	// Save the context
-	context.save();
-	
-	// move into the middle of the canvas, just to make room
-	context.translate(this.x, this.y);
-	
-	// Change the opacity
-	if(this.opacity > 1) {
-		this.factor = -1;
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+	if ($('.main_nav').hasClass('open-nav')) {
+			$('.main_nav').removeClass('open-nav');
+	} else {
+			$('.main_nav').addClass('open-nav');
 	}
-	else if(this.opacity <= 0) {
-		this.factor = 1;
-		
-		this.x = Math.round(Math.random() * screenW);
-		this.y = Math.round(Math.random() * screenH);
+});
+
+$('.main_nav li a').click(function() {
+	if ($('.main_nav').hasClass('open-nav')) {
+			$('.navigation').removeClass('open-nav');
+			$('.main_nav').removeClass('open-nav');
 	}
-		
-	this.opacity += this.increment * this.factor;
-	
-	context.beginPath()
-	for (var i = 5; i--;) {
-		context.lineTo(0, this.length);
-		context.translate(0, this.length);
-		context.rotate((Math.PI * 2 / 10));
-		context.lineTo(0, - this.length);
-		context.translate(0, - this.length);
-		context.rotate(-(Math.PI * 6 / 10));
-	}
-	context.lineTo(0, this.length);
-	context.closePath();
-	context.fillStyle = "rgba(255, 255, 200, " + this.opacity + ")";
-	context.shadowBlur = 5;
-	context.shadowColor = '#fff';
-	context.fill();
-	
-	context.restore();
-}
+});
+
+
+/*----------------------------------------------------*/
+/* Smooth Scrolling
+------------------------------------------------------ */
+
+jQuery(document).ready(function($) {
+
+ $('.smoothscroll').on('click',function (e) {
+		e.preventDefault();
+
+		var target = this.hash,
+		$target = $(target);
+
+		$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+		}, 800, 'swing', function () {
+				window.location.hash = target;
+		});
+});
+
+});
+
+
+TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
