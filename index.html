@@ -12,228 +12,246 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="stylesheet" href="src/css/banner.css">
+  <link rel="stylesheet" href="src/css/grid.css">
   <link rel="stylesheet" href="src/css/navbar.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="nav-wrap nav-btns">
-    <div class="logo">
-      <a href="#top">
-        <img src="src/img/mini-logo.png" class="nav-logo" alt="">
-      </a>
+<!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<header id="header">
+  <div class="main_nav">
+    <div class="container">
+      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="smoothscroll" href="#header">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#skills">Services</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Work</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="toggle">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </div>
-    <ul class="nav-bar">
-      <li><a class="aboutLink menu" href="#aboutSection">SOBRE MÍ</a></li>
-      <li><a class="skillsLink menu" href="#skillsSection">HERRAMIENTAS</a></li>
-      <li><a class="projectsLink menu" href="#projectsSection">PROYECTOS</a></li>
-      <li><a class="contactLink menu" href="#contactSection">CONTACTO</a></li>
-    </ul>
   </div>
-  <main id="top">
-    <!-- Banner -->
-    <div class="banner">
-      <canvas id="space"></canvas>
-      <div class="banner__overlay">
-        <div class="banner__container">
-          <a href="#!" class="brand-logo">
-            <img src="src/img/logo.png" alt="" class="name-logo">
-          </a>
+  <div class="title">
+    <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+    <div class="smallsep heading"></div>
+    <img src="src/img/logo.png" alt="" class="name-logo">
+    <a class="smoothscroll" href="#about">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    </a> </div>
+    <img src="/src/img/2224569-wide-02.png" class="background-img" alt="background image">
+  <a class="smoothscroll" href="#about">
+  <div class="scroll-down"></div>
+  </a> </header>
+  
+<!-- About Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <h1>About</h1>
+      <div class="block"></div>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <h3><span class="typcn typcn-device-desktop icon"></span>Our Process</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div class="six columns">
+        <h3><span class="typcn typcn-pen icon"></span>Our Approach</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3><span class="typcn typcn-cog-outline icon"></span>Our Goal</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
-        <img class="banner__scroll-down" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
+        <div class="six columns">
+          <h3><span class="typcn typcn-lightbulb icon"></span>Our Mission</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="main">
-      <!-- About Me -->
-      <div id="aboutSection" class="topper" data-aos="fade-up"></div>
-      <section class="about">
-        <h3>SOBRE MÍ</h>
-        <div class="row">
-          <div class="image col s12 m5" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1581 mini-logo">
-              <img src="src/img/profile.jpg" alt="profile-picture"/>
-            </figure>
-          </div>
-          <div class="info col s12 m6" data-aos="zoom-in" data-aos-duration="1500">
-            <p>
-              Front-End Developer enfocada en el desarrollo de páginas y aplicaciones web de calidad, dinámicas y con
-              un alto enfoque en el usuario final. Busco combinar las mejores herramientas digitales de acuerdo a los
-              requerimientos del cliente.
-              <br>
-              Soy una persona curiosa en constante búsqueda de nuevos conocimientos, fascinada por el alcance de la
-              tecnología actual y cómo aporta a la vida de las personas.
-            </p>
-          </div>
-        </div>
-      </section>
+<!-- Team Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
 
-      <!-- Tools -->
-      <div id="skillsSection" class="topper"></div>
-      <section  class="skills" data-aos="fade-up">
-        <h3>HERRAMIENTAS</h3>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/HTML.png" alt="">
-            <p>HTML 5</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/CSS.png" alt="">
-            <p>CSS 3</p>
-          </div>
-          <div class="icon-container col offset-s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/JavaScript.png" alt="">
-            <p>JavaScript</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/Bootstrap.png" alt="">
-            <p>Bootstrap</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/materialize.png" alt="">
-            <p>Materialize</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/Node-JS.png" alt="">
-            <p>NodeJS</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/Npm.png" alt="">
-            <p>NPM</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/React.png" alt="">
-            <p>ReactJS</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/firebase.png" alt="">
-            <p>Firebase</p>
-          </div>
-          <div class="icon-container col s3 m2" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="src/img/GitHub-Icon.png" alt="">
-            <p>Github</p>
-          </div>
-      </section>
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <h1>Meet the Team</h1>
+      <div class="block"></div>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="row">
+      <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <h4>Naruto Uzumaki</h4>
+        <p>Creative Director</p>
+        <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <h4>Sasuke Uchiha</h4>
+        <p>Lead Designer</p>
+        <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <h4>Shikamaru Nara</h4>
+        <p>Designer</p>
+        <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <h4>Sakura Haruno</h4>
+        <p>Designer</p>
+        <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Projects -->
-      <div id="projectsSection" class="topper"></div>
-      <section  class="projects container" data-aos="fade-up">
-        <h3>PROYECTOS</h3>
-        <div class="row">
-          <!-- FoodMap -->
-          <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1527">
-              <div class="image"><img src="src/img/foodmap.jpeg" alt="foodmap caption" /></div>
-              <figcaption>
-                <h4>FOOD MAP</h4>
-                <p>App que utiliza Google Maps para buscar lugares de comida con geolocalización y preferencias personales.</p>
-                <a href="https://elizabethvegam.github.io/foodmap" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                <a href="https://github.com/ElizabethVegaM/foodmap" target="_blank" class="waves-effect waves-light btn">CODE</a>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <!-- IF Visitors -->
-          <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1527">
-              <div class="image"><img src="src/img/ifvisitors.jpeg" alt="pr-sample24" /></div>
-              <figcaption>
-                <h4>IF Visitors</h4>
-                <p>App que registra visitantes del edificio IF Blanco para mejorar la seguridad en el acceso al recinto.</p>
-                <a href="https://registro-visitantes.firebaseapp.com" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                <a href="https://github.com/ElizabethVegaM/registro-visitantes-if" target="_blank" class="waves-effect waves-light btn">CODE</a>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <!-- ConectApp -->
-          <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1527">
-              <div class="image"><img src="src/img/conectapp.jpeg" alt="pr-sample25" /></div>
-              <figcaption>
-                <h4>ConectApp</h4>
-                <p>Red social enfocada en la comunidad escolar que mejora la comunicación entre alumnos y sus profesores.</p>
-                <a href="https://social-network-d7373.firebaseapp.com" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                <a href="https://github.com/ElizabethVegaM/conectapp-alumnos" target="_blank" class="btn">CODE</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Md-Links -->
-          <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1527">
-              <div class="image"><img src="src/img/md-links.jpg" alt="pr-sample25" /></div>
-              <figcaption>
-                <h4>MD-Links</h4>
-                <p>Pequeña librería que analiza archivos de tipo .md para verificar los links que contengan y entregar algunas estadísticas.</p>
-                <a href="https://www.npmjs.com/package/theraven-md-links" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                <a href="https://github.com/ElizabethVegaM/markdown-links" target="_blank" class="btn">CODE</a>
-              </figcaption>
-            </figure>
-          </div>
-          <!-- Pinterest -->
-          <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="1500">
-            <figure class="snip1527">
-              <div class="image"><img src="src/img/pinterest-react.jpg" alt="pr-sample25" /></div>
-              <figcaption>
-                <h4>Pinterest</h4>
-                <p>Reto desarrollado en ReactJs que replica la página de inicio de Pinterest desktop</p>
-                <a href="https://elizabethvegam.github.io/pinterest-react/" target="_blank" class="waves-effect waves-light btn">DEMO</a>
-                <a href="https://github.com/ElizabethVegaM/pinterest-react" target="_blank" class="btn">CODE</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+<!-- Skills Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
 
-      <!-- Footer -->
-      <section id="contactSection" class="foot" data-aos="fade-up">
-        <h3>CONTACTO</h3>
-        <!-- Side Buttons -->
-        <div class="contact-info">
-          <h5>Si estás interesado en mi trabajo o deseas conocer un poco más, te invito a contactarme a través de los siguientes medios:</h5>
-        </div>
-        <div class="sn-container col s6 offset-s3">
-          <div class="sn-links">
-            <div class="round-btn">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <a>eb.vega.m@gmail.com</a>
-          </div>
-          <div class="sn-links">
-            <div class="round-btn">
-              <i class="fab fa-github-alt"></i>
-            </div>
-            <a href="https://github.com/ElizabethVegaM" target="_blank">ElizabethVegaM</a>
-          </div>
-          <div class="sn-links">
-            <div class="round-btn">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-            <a href="https://www.linkedin.com/in/elizabeth-vega-medina/" target="_blank">elizabeth-vega-medina</a>
-          </div>
-          <div class="sn-links">
-            <div class="round-btn">
-              <i class="fas fa-file"></i>
-            </div>
-            <a href="src/Elizabeth Vega CV.pdf" target="_blank" download >CV Online</a>
+<section id="skills">
+  <div class="container">
+    <h1>Services</h1>
+    <div class="block"></div>
+    <div class="row">
+      <div class="one-third column">
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+      </div>
+      <div class="one-third column">
+        <h3>Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+      </div>
+      <div class="one-third column">
+        <h3>Marketing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns">
+        <div class="progressBar">
+          <h4>HTML5</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-90"></div>
           </div>
         </div>
-      </section>
-  </main>
+        <div class="progressBar">
+          <h4>CSS3</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-80"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h4>Jquery</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-30"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h4>WordPress</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-70"></div>
+          </div>
+        </div>
+      </div>
+      <div class="four columns">
+        <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem. Enim soluta consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<section id="portfolio">
+  <div class="container">
+    <h1>Work</h1>
+    <div class="block"></div>
+    <div class="row">
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work One"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Two"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Three"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Four"/></div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Five"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Six"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Seven"/></div>
+      <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<section id="testimonial">
+  <div class="container">
+    <div class="quoteLoop">
+      <blockquote class="quote"> <img src="http://placehold.it/100x100" width="100" height="100" alt=""/>
+        <h5>&nbsp;<br>
+          &rdquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;<br>
+          <small>Steve Bruce, Sed ut perspiciatis unde omnis</small></h5>
+      </blockquote>
+      <blockquote class="quote"> <img src="http://placehold.it/100x100" width="100" height="100" alt=""/>
+        <h5>&nbsp;<br>
+          &ldquo;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.&rdquo;<br>
+          <small>Tom Jones, Sed ut perspiciatis unde omnis</small></h5>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<section id="contact">
+  <div class="container">
+    <h1>Contact</h1>
+    <div class="block"></div>
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleRecipientInput">Name</label>
+          <input class="u-full-width" type="text">
+        </div>
+        <div class="six columns">
+          <label for="exampleEmailInput">Email</label>
+          <input class="u-full-width" type="email">
+        </div>
+      </div>
+      <div class="row">
+        <label for="exampleMessage">Message</label>
+        <textarea class="u-full-width"></textarea>
+        <input class="button-primary" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<footer>
+  <div class="container">
+    <div class="nine columns">
+      <p>Created with love by Jeff.</p>
+    </div>
+    <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
+  </div>
+</footer>
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
