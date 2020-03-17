@@ -1,32 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nav-wrap {
   position: fixed;
   justify-content: center;
@@ -37,9 +8,9 @@
   background: -moz-linear-gradient(90deg, #0b0522 30%, #290933 100%, #72142a 100%);
   background: -webkit-linear-gradient(90deg, #0b0522 30%, #290933 100%, #72142a 100%);
   background: linear-grient(90deg, #0b0522 30%, #420f52 100%, #72142a 100%);
-  -webkit-box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 6px 16px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.75);
 }
 
 .nav-logo {
@@ -118,7 +89,7 @@
 
 
 .nav-btns a {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 .nav-bar li:before,
@@ -161,9 +132,12 @@
 }
 
 @keyframes zoom {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -225,9 +199,11 @@
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg);
   }
+
   .nav-btns ul {
     padding: 0 80px;
   }
+
   .nav-btns li {
     margin: 1em 0.6em;
     padding: 18px 15px;
