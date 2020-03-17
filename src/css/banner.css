@@ -1,7 +1,7 @@
 /* Banner */
 
 .banner {
-  background-image: url('../img/photo-1516331138075-f3adc1e149cd.jpeg');
+	background-image: url('../img/2224569-wide-02.png');
   background-color: #000;
   background-position: center;
   background-size: cover;
@@ -21,7 +21,7 @@
   display: table;
   height: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   animation: banner-in 2s;
 }
 
@@ -46,7 +46,7 @@
     background-color: rgba(0, 0, 0, 1);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -55,7 +55,7 @@
     background-color: rgba(0, 0, 0, 1);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -64,7 +64,7 @@
     background-color: rgba(0, 0, 0, 1);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -73,7 +73,7 @@
     background-color: rgba(0, 0, 0, 1);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
