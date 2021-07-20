@@ -1,12 +1,19 @@
 /* Grid
 ********************************************************************* */
 .container {
-	position: relative;
 	width: 100%;
-	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 20px;
-	box-sizing: border-box;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.row-direction {
+	display: flex;
+	flex-direction: row;
 }
 
 .column,
@@ -14,6 +21,25 @@
 	width: 100%;
 	float: left;
 	box-sizing: border-box;
+}
+
+.four-columns {
+	width: 30.6666666667%;
+}
+
+.eight-columns {
+	width: 65.3333333333%;
+}
+
+@media (max-width: 680px) {
+	.row-direction {
+		flex-direction: column;
+	}
+	
+	.eight-columns,
+	.four-columns {
+		width: 100%;
+	}
 }
 
 /* For devices larger than 400px */
@@ -53,25 +79,21 @@
 		width: 22%;
 	}
 
-	.four.columns {
-		width: 30.6666666667%;
-	}
 
-	.five.columns {
+
+	.five-columns {
 		width: 39.3333333333%;
 	}
 
-	.six.columns {
+	.six-columns {
 		width: 48%;
 	}
 
-	.seven.columns {
+	.seven-columns {
 		width: 56.6666666667%;
 	}
 
-	.eight.columns {
-		width: 65.3333333333%;
-	}
+
 
 	.nine.columns {
 		width: 74.0%;
@@ -173,3 +195,5 @@
 		margin-left: 52%;
 	}
 }
+
+@media (min-width: 550px) {}
