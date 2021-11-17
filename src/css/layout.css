@@ -81,8 +81,6 @@
 		width: 22%;
 	}
 
-
-
 	.five-columns {
 		width: 39.3333333333%;
 	}
@@ -94,8 +92,6 @@
 	.seven-columns {
 		width: 56.6666666667%;
 	}
-
-
 
 	.nine.columns {
 		width: 74.0%;
@@ -109,7 +105,7 @@
 		width: 91.3333333333%;
 	}
 
-	.twelve.columns {
+	.twelve-columns {
 		width: 100%;
 		margin-left: 0;
 	}

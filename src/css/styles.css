@@ -329,6 +329,25 @@ header {
 	transform: scale(1.3) rotate(5deg);
 }
 
+/* Gallery */
+
+.gallery-container {
+	margin-top: 50px;
+}
+
+.gallery-card {
+	max-width: 20%;
+	margin: 0;
+}
+
+.gallery-card img::before {
+	background-color: #b36e84b5;
+}
+
+.gallery-card img {
+	width: 100%;
+}
+
 /*Projects Section*/
 
 .project-card {
@@ -823,4 +842,10 @@ form {
 	background: -webkit-linear-gradient(-45deg, #e5a7f5 0%, #2a2e4c 100%);
 	background: linear-gradient(135deg, #e5a7f5 0%, #2a2e4c 100%);
 	margin-bottom: 50px;
+}
+
+@media (max-width: 680px) {
+	.gallery-container {
+		display: none!important;
+	}
 }
