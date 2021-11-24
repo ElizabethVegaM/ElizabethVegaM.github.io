@@ -31,6 +31,8 @@ nav {
 }
 
 nav ul {
+	padding-left: 0;
+	margin-top: 0;
 	list-style: none;
 	overflow: hidden;
 	text-align: center;
@@ -41,6 +43,7 @@ nav ul li {
 	margin-left: 35px;
 	line-height: 1.5;
 	letter-spacing: 1px;
+	margin-bottom: 1rem;
 }
 
 .link-animation {
@@ -59,7 +62,7 @@ nav ul li {
 	font-size: 20px;
 	position: absolute;
 	right: 22px;
-	top: 0;
+	top: auto;
 	width: 30px;
 }
 
