@@ -317,7 +317,7 @@ figure.project-figure * {
 	transition: all 0.3s ease-out;
 }
 
-figure.project-figure img {
+figure.project-figure img:first-child {
 	max-width: 100%;
 	vertical-align: top;
 }
