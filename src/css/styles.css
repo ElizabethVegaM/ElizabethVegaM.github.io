@@ -302,8 +302,8 @@ figure.project-figure {
 	position: relative;
 	overflow: hidden;
 	margin: 10px;
-	min-width: 230px;
-	max-width: 400px;
+	min-width: 330px;
+	max-width: 450px;
 	width: 100%;
 	color: #ffffff;
 	text-align: left;
@@ -320,6 +320,17 @@ figure.project-figure * {
 figure.project-figure img {
 	max-width: 100%;
 	vertical-align: top;
+}
+
+figure.project-figure .tech-icon {
+	max-width: 80px;
+	max-height: 30px;
+}
+
+figure.project-figure .tech-icons {
+	width: 50%;
+	display: inline-flex;
+	justify-content: space-evenly;
 }
 
 figure.project-figure figcaption {
